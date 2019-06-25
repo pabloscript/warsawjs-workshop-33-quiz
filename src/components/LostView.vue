@@ -7,14 +7,14 @@
     <hr>
     <div class="columns">
       <div class="column">
-        <button class="button is-fullwidth">
+        <router-link :to="{name: 'rules'}" class="button is-fullwidth">
           Try again
-        </button>
+        </router-link>
       </div>
       <div class="column">
-        <button class="button is-fullwidth">
+        <router-link :to="{name: 'intro'}" class="button is-fullwidth">
           Main menu
-        </button>
+        </router-link>
       </div>
     </div>
   </div>

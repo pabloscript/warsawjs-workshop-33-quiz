@@ -37,3 +37,11 @@
     }
   }
 </style>
+
+<script>
+  export default {
+    props: {
+      difficultyLevels: Object
+    }
+  }
+</script>

@@ -4,7 +4,7 @@
     <div class="field">
       <label class="label">Difficulty</label>
       <div class="control">
-        ~~difficulty slider~~
+        <difficulty-slider :difficulty-levels="difficultyLevels" />
       </div>
     </div>
     <div class="field">
@@ -22,4 +22,21 @@
     </div>
   </div>
 </template>
+
+<script>
+  import DifficultySlider from './DifficultySlider'
+  import { DIFFICULTY_LEVELS } from '../common/const'
+
+  export default {
+    components: {
+      DifficultySlider
+    },
+
+    data () {
+      return {
+        difficultyLevels: DIFFICULTY_LEVELS
+      }
+    }
+  }
+</script>
 
